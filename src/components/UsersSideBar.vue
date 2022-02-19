@@ -30,7 +30,8 @@ import Title from './base/Title.vue';
 import { getItemFromHash, updateUrlHash } from '../helpers/hash';
 export default {
    components: { Spinner, Button, Input, Title },
-   setup() {
+   emits: ['userSelected'],
+   setup(props, { emit }) {
       const isLoading = ref(false);
       const userList = ref([]);
       const selectedUserId = ref(null);
@@ -38,6 +39,7 @@ export default {
 
       const selectUser = id => {
          selectedUserId.value = id;
+         emit('userSelected');
          updateUrlHash('userId', selectedUserId.value);
       };
 
