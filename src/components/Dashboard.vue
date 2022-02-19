@@ -6,7 +6,7 @@
                <UsersSideBar />
             </aside>
 
-            <div class="bg-slate-900 w-full border-2 border-slate-800 h-full overflow-y-auto">
+            <div class="bg-slate-900 w-full border-2 border-slate-800 h-full overflow-hidden flex flex-col">
                <TodosList />
             </div>
          </div>
@@ -33,13 +33,4 @@ export default {
 .fade-enter-from,
 .fade-leave-to
    opacity: 0
-
-.list-enter-active,
-.list-leave-active
-   transition: all 0.5s ease
-
-.list-enter-from,
-.list-leave-to
-   opacity: 0
-   transform: translateX(30px)
 </style>

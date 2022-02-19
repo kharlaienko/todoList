@@ -11,6 +11,7 @@
          border-slate-700 border-2
          my-2
          rounded-sm
+         outline-black
       "
       :class="{ ['bg-slate-900, text-sky-500']: isActive }"
    >
