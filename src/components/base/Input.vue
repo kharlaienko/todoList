@@ -1,6 +1,6 @@
 <template>
    <input
-      class="border w-full border-slate-800 bg-transparent outline-none rounded-t-sm p-2"
+      class="border-2 w-full border-slate-700 bg-transparent outline-none rounded-t-sm p-2"
       v-model="modelValue"
       @input="$emit('update:modelValue', modelValue)"
       :placeholder="placeholder"
